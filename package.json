@@ -1,6 +1,6 @@
 {
-  "name": "Tic Tac Toe Topnotch",
-  "version": "1.1.1",
+  "name": "Tic-Tac-Toe-Topnotch",
+  "version": "1.1.2",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
@@ -15,5 +15,8 @@
     "gulp-uglify": "^1.1.0",
     "run-sequence": "^1.0.2",
     "vinyl-transform": "^1.0.0"
+  },
+  "dependencies": {
+    "jquery": "^2.1.3"
   }
 }
