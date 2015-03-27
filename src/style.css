@@ -28,12 +28,9 @@ a:hover {
 }
 
 .modal {
-	position: fixed;
+	position: absolute;
 
-	top: 50%;
 	left: 50%;
-
-	transform: translate(-50%, -50%);
 
 	font-size: 64px;
 
@@ -47,6 +44,22 @@ a:hover {
 	transitition-timing-function: linear;
 }
 
+@media (orientation: landscape) {
+	.modal {
+		top: 50%;
+
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media (orientation: portrait) {
+	.modal {
+		top: 50vmin;
+
+		transform: translate(-50%, -50%);
+	}
+}
+
 .wrapper {
 	width: 100vmin;
 	height: 100%;
@@ -57,9 +70,7 @@ a:hover {
 	padding: 20px;
 
 	transition-property: opacity;
-	transition-duration: 2s;
-
-	opacity: 0;
+	transition-duration: 2.0s;
 }
 
 .game-title {

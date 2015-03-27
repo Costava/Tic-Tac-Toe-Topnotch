@@ -1,4 +1,4 @@
-var $ = require('./jquery-1.11.0.min.js');
+var $ = require('jquery');
 
 
 
@@ -247,25 +247,32 @@ $(document).ready(function() {
 		}
 	});
 
-	$(window).on('scroll', function() {
+	function showHideBottomText() {
 		//console.log($( window ).scrollTop());
 
 		var scrollTop = $(window).scrollTop();
 
 		var bottomText = document.getElementById('bottom-text');
 
-		if (scrollTop > 0) {
+		if ($(document).height() <= $(window).height()) {
+			bottomText.style.opacity = 1;
+		}
+		else if (scrollTop > 0) {
 			bottomText.style.opacity = 1;
 		}
 		else {
 			bottomText.style.opacity = 0;
 		}
+	}
+
+	$(window).on('scroll', function() {
+		showHideBottomText();
 	});
 
-	// If there is no scroll bar, show the bottom text
 	$(window).on('resize', function() {
-		if ($(document).height() > $(window).height()) {
-			document.getElementById('bottom-text').style.opacity = 1;
-		}
+		showHideBottomText();
 	});
+
+	// inital run
+	showHideBottomText();
 });
