@@ -31,6 +31,7 @@ a:hover {
 	position: absolute;
 
 	left: 50%;
+	transform: translate(-50%, -50%);
 
 	font-size: 64px;
 
@@ -47,16 +48,12 @@ a:hover {
 @media (orientation: landscape) {
 	.modal {
 		top: 50%;
-
-		transform: translate(-50%, -50%);
 	}
 }
 
 @media (orientation: portrait) {
 	.modal {
 		top: 50vmin;
-
-		transform: translate(-50%, -50%);
 	}
 }
 
