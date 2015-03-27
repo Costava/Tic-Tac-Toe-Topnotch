@@ -39,7 +39,7 @@ gulp.task('move-images', function() {
 });
 
 gulp.task('move-stuff', function() {
-	gulp.src(['./src/manifest.webapp', './src/attribution.txt'])
+	gulp.src('./src/manifest.webapp')
 		.pipe(gulp.dest('./dist'));
 });
 
