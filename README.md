@@ -6,4 +6,4 @@ Sweet Tic Tac Toe with 2 players or computer player.
 
 ####[Play online](https://costava.github.io/Tic-Tac-Toe-Topnotch/dist/)
 
-![Tic Tac Toe](https://i.imgur.com/Qy4PxNZ.png)
+![Tic Tac Toe](https://i.imgur.com/nxxYuUI.png)
